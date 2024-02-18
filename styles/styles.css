@@ -142,7 +142,7 @@ body {
   color: #FFFFFF;
 }
 
-.secondary-color {
+.button-secondary-color {
   background-color: #82B3D3;
   color: #FFFFFF;
 }
@@ -238,7 +238,7 @@ body {
 }
 
 .pagination-current {
-  background-color: #F2F2F2;
   color: #000000;
+  background-color: #F2F2F2;
 }
 
