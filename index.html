@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="styles/styles.css" />
 </head>
 <body>
 <header class="page-header">
@@ -37,7 +38,7 @@
         </a>
       </li>
       <li class="navigation-item">
-        <a class="navigation-link" href="#">
+        <a class="navigation-link button rent-button" href="#">
           Хочу сюда
         </a>
       </li>
@@ -47,85 +48,85 @@
 <main class="main-index">
   <section class="hero">
     <h1 class="visually-hidden">Город Sedona</h1>
-    <img src="images/index-background.jpg"
+    <img class="hero-background-image" src="images/index-background.jpg"
          alt="Изображение каньона c облаками, который содержит текст приветствия и название проекта Sedona" width="1200"
          height="485">
-    <p class="hero-description-title">
+    <p class="text-information-title">
       Седона — небольшой городок в Аризоне,
       заслуживающий большего!
     </p>
-    <p class="hero-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+    <p class="text-information-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
   </section>
   <section class="advantages">
     <h2 class="visually-hidden">Приемущества</h2>
     <ul class="advantages-list">
       <li class="advantages-item">
         <div>
-          <h4>Настоящий городок</h4>
+          <h4 class="advantages-item-title">Настоящий городок</h4>
           <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </div>
         <img src="images/advantages/photo-1.jpg" alt="Изображение административного здания" width="800" height="385">
       </li>
       <li class="advantages-item">
         <div>
-          <h4>Небольшая площадь</h4>
+          <h4 class="advantages-item-title">Небольшая площадь</h4>
           <p>Все достопримечательности находятся очень близко</p>
         </div>
       </li>
       <li class="advantages-item">
-        <h4>Красивая дорога</h4>
+        <h4 class="advantages-item-title">Красивая дорога</h4>
         <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
       </li>
       <li class="advantages-item">
         <div>
-          <h4>Мало туристов</h4>
+          <h4 class="advantages-item-title">Мало туристов</h4>
           <p>Большинство едет в Гранд Каньон и толпится там</p>
         </div>
       </li>
       <li class="advantages-item">
         <img src="images/advantages/photo-2.jpg" alt="Изображение моста дьявола, как каньон" width="800" height="385">
         <div>
-          <h4>Там есть мост дьявола</h4>
+          <h4 class="advantages-item-title">Там есть мост дьявола</h4>
           <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </div>
       </li>
     </ul>
     <div>
-      <h3 class="advantages-description-title">
+      <h3 class="text-information-title">
         Приезжайте в Седону отдохнуть в комфорте и уюте!
       </h3>
-      <p class="advantages-description">Опытный персонал и качественное обслуживание!</p>
+      <p class="text-information-description">Опытный персонал и качественное обслуживание!</p>
     </div>
     <ul class="advantages-invite-list">
       <li class="advantages-invite-item">
-        <h4>Жилье</h4>
-        <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+        <h4 class="advantages-invite-title">Жилье</h4>
+        <p class="advantages-invite-description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
       </li>
       <li class="advantages-invite-item">
-        <h4>Еда</h4>
-        <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+        <h4 class="advantages-invite-title">Еда</h4>
+        <p class="advantages-invite-description">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
       </li>
       <li class="advantages-invite-item">
-        <h4>Сувениры</h4>
-        <p>Не только китайского, но и настоящего местного производства!</p>
+        <h4 class="advantages-invite-title">Сувениры</h4>
+        <p class="advantages-invite-description">Не только китайского, но и настоящего местного производства!</p>
       </li>
     </ul>
   </section>
   <section class="find">
     <h2 class="visually-hidden">Приглашение</h2>
-    <h3 class="find-title">Заинтересовались?</h3>
-    <p class="find-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
+    <h3 class="text-information-title">Заинтересовались?</h3>
+    <p class="text-information-description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
       Седоне?</p>
-    <button class="button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
+    <button class="button find-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
   </section>
-  <section class="newsletter">
+  <section class="newsletter newsletter-background">
     <h2 class="visually-hidden">Подписка на рассылку</h2>
-    <h3>Подпишитесь на рассылку</h3>
-    <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+    <h3 class="text-information-title">Подпишитесь на рассылку</h3>
+    <p class="text-information-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
     <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
       <label class="visually-hidden" for="newsletterEmail">Ваш e-mail</label>
       <input class="newsletter-input" id="newsletterEmail" type="email" name="email" placeholder="Ваш e-mail">
-      <button class="button" type="submit">
+      <button class="button secondary-color" type="submit">
         ПОДПИСАТЬСЯ
       </button>
     </form>
@@ -135,17 +136,17 @@
   <div class="footer-social">
     <ul class="footer-social-list">
       <li class="footer-social-item">
-        <a class="button" href="#">
+        <a  href="#">
           <span class="visually-hidden">Твиттер</span>
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="#">
+        <a href="#">
           <span class="visually-hidden">ВКонтакте</span>
         </a>
       </li>
       <li class="footer-social-item">
-        <a class="button" href="#">
+        <a  href="#">
           <span class="visually-hidden">Инстаграм</span>
         </a>
       </li>

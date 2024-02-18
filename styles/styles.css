@@ -1,0 +1,244 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin:0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+.navigation-link {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+}
+
+.button {
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 36px;
+  font-size: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #756157;
+}
+
+
+.rent-button {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.text-information-title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.text-information-description {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+}
+
+.hero {
+  text-align: center
+}
+
+.advantages-item {
+  text-align: center;
+}
+
+.advantages-item:first-child .advantages-item-title,
+.advantages-item:last-child .advantages-item-title {
+  color: #FFFFFF;
+}
+
+.advantages-item:nth-child(odd) {
+  background-color: rgba(131, 179, 211, 0.20);
+}
+
+.advantages-item:nth-child(even) {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item:first-child, .advantages-item:last-child {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
+.advantages-item-title {
+  color: #000000;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.advantages-invite-item {
+  text-align: center;
+}
+
+.advantages-invite-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.advantages-invite-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
+}
+
+.newsletter {
+  color: #000000;
+}
+
+.newsletter .text-information-description {
+  color: #333333;
+}
+
+.newsletter-background {
+  color: #FFFFFF;
+  background-image: url("../images/blur-filter-photo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.newsletter-background .text-information-description {
+  color: #FFFFFF;
+}
+
+.secondary-color {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
+.footer-contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000000;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.catalog-filter {
+  color: #FFFFFF;
+  background-image: url("../images/blur-filter-photo.jpg");
+  background-size: cover;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.catalog-filter-title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+.catalog-filter-buttons .button {
+  font-size: 16px;
+}
+
+
+.control-input {
+  line-height: 23px;
+}
+
+.button-link {
+  background-color: transparent;
+  border: 0;
+}
+
+.catalog-count {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.hotel-card-link {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.hotel-card {
+  color: #333333;
+}
+
+.hotel-card-rating {
+  background-color: #F2F2F2;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hotel-card-buttons button {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.pagination-link {
+  background-color: #82B3D3;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.pagination-current {
+  background-color: #F2F2F2;
+  color: #000000;
+}
+
