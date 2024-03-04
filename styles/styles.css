@@ -13,12 +13,6 @@
   src: url("../fonts/ptsans-700.woff2") format("woff2");
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 html {
   height: 100%;
 }
@@ -104,6 +98,7 @@ body {
 
 .navigation-link {
   display: block;
+  position: relative;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -112,9 +107,55 @@ body {
   text-decoration: none;
   padding: 20px 16px;
   color: #000000;
+  transition: background-color 0.3s;
+}
+
+.navigation-link:hover{
+  background-color: #E5E5E5;
+}
+
+.navigation-link-current::before {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background-color: #756257;
+  bottom:0;
+  right: 16px;
+  left: 16px;
+}
+
+.navigation-cart-link {
+  margin-right: 20px;
+}
+
+.navigation-cart-link::after {
+  content: '12';
+  position: absolute;
+  background-color: #7DB54F;
+  width: 20px;
+  height: 20px;
+  color: #FFFFFF;
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 400;
+  border-radius: 50%;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 5px;
+  top: 11px;
+}
+
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .button {
+  display: inline;
   font-family: inherit;
   font-weight: 700;
   line-height: 36px;
@@ -126,6 +167,25 @@ body {
   background-color: #756157;
   padding: 8px 50px;
   border-radius: 4px;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+.button:hover {
+  background-color: #615048;
+}
+
+.button:focus {
+  background-color: #615048;
+}
+
+.button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.30);
+}
+
+.button:disabled {
+  background-color: #E5E5E5;
 }
 
 .button-light {
@@ -141,6 +201,7 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  padding: 8px 34px;
 }
 
 .select-control {
@@ -181,6 +242,7 @@ body {
 
 .hero-background-image {
   vertical-align: middle;
+  object-fit: cover;
 }
 
 .advantages-promo {
@@ -207,7 +269,8 @@ body {
 .advantages-item-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  flex-grow: 1;
+  justify-content: flex-end;
   padding: 103px 85px;
 }
 
@@ -223,6 +286,7 @@ body {
 
 .advantages-item-image {
   vertical-align: middle;
+  object-fit: cover;
 }
 
 .advantages-item:first-child .advantages-item-title,
@@ -252,6 +316,28 @@ body {
   line-height: 28px;
   display: block;
   padding: 0 29px;
+  position: relative;
+}
+
+.advantages-item-title::after {
+  content: '';
+  position: absolute;
+  top: 86px;
+  left: 85px;
+  right: 85px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.30);
+}
+
+
+.advantages-item-picture .advantages-item-title::after {
+  content: '';
+  position: absolute;
+  top: 86px;
+  left: 85px;
+  right: 85px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.30);
 }
 
 .advantages-invite-list {
@@ -280,6 +366,26 @@ body {
   width: 230px;
   margin: 0 auto;
   padding: 80px 0;
+}
+
+.advantages-invite-icon {
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 30px;
+}
+
+.advantages-invite-icon-home {
+  background-image: url("../images/icons/advantages/house.svg");
+}
+
+.advantages-invite-icon-food {
+  background-image: url("../images/icons/advantages/food.svg");
+}
+
+.advantages-invite-icon-souvenirs {
+  background-image: url("../images/icons/advantages/present.svg");
 }
 
 .advantages-invite-title {
@@ -351,6 +457,12 @@ body {
   font-family: inherit;
   flex-grow: 1;
   padding: 12px 20px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.subscribe-button {
+  border-radius: 0 4px 4px 0;
 }
 
 
@@ -358,6 +470,20 @@ body {
   background-color: #82B3D3;
   color: #FFFFFF;
 }
+
+.button-secondary-color:hover {
+  background-color: #68A2CA;
+}
+
+.button-secondary-color:focus {
+  background-color: #68A2CA;
+}
+
+.button-secondary-color:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.30);
+}
+
 
 .page-footer {
   background-color: #FFFFFF;
@@ -368,6 +494,28 @@ body {
 
 .footer-social {
   width: 142px;
+}
+
+.footer-social-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #83B3D3;
+}
+
+.footer-social-link:hover .footer-social-icon {
+  fill: #68A2CA;
+}
+
+.footer-social-link:focus .footer-social-icon {
+  fill: #68A2CA;
+}
+
+.footer-social-link:active .footer-social-icon {
+  fill: rgba(104, 162, 202, 0.3);
 }
 
 .footer-contacts {
@@ -384,8 +532,13 @@ body {
   flex-wrap: wrap;
 }
 
-.footer-social-item {
-  padding: 0 10px;
+
+.footer-social-link {
+  display: block;
+  position: relative;
+  padding: 13px;
+  min-height: 16px;
+  min-width: 18px;
 }
 
 .footer-logo {
@@ -401,6 +554,28 @@ body {
   text-decoration: none;
 }
 
+.footer-contacts-phone:hover {
+  color: #756157;
+}
+.footer-contacts-phone:focus {
+  color: #756157;
+}
+.footer-contacts-phone:active {
+  color: rgba(117, 97, 87, 0.30);
+}
+
+.footer-logo-icon {
+  fill: #000000;
+}
+.footer-logo-icon:hover {
+  fill: #756157;
+}
+.footer-logo-icon:focus {
+  fill: #756157;
+}
+.footer-logo-icon:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
 
 .catalog-filter {
   color: #FFFFFF;
@@ -561,6 +736,13 @@ body {
   margin: 0 0 40px;
 }
 
+.hotel-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
 .hotel-details {
   display: flex;
   justify-content: space-between;
@@ -576,6 +758,7 @@ body {
 }
 
 .hotel-card-link {
+  display: block;
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -584,6 +767,9 @@ body {
 }
 
 .hotel-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   color: #333333;
   padding: 20px;
   border: 1px solid #E6E6E6;
@@ -593,12 +779,12 @@ body {
 .hotel-card-image {
   vertical-align: middle;
   margin-bottom: 16px;
+  object-fit: cover;
 }
 
 .hotel-card-title {
   margin: 0 0 16px;
   font-size: 24px;
-
 }
 
 .hotel-card-rating {
@@ -610,10 +796,17 @@ body {
   border-radius: 4px;
 }
 
-.hotel-card-buttons button {
+.hotel-card-buttons .button {
   font-size: 16px;
   line-height: 20px;
+  max-height: 36px;
+  max-width: 140px;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  white-space: nowrap;
 }
+
 
 .pagination {
   display: flex;
