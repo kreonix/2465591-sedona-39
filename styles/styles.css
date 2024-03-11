@@ -110,7 +110,7 @@ body {
   transition: background-color 0.3s;
 }
 
-.navigation-link:hover{
+.navigation-link:hover {
   background-color: #E5E5E5;
 }
 
@@ -119,7 +119,7 @@ body {
   position: absolute;
   height: 2px;
   background-color: #756257;
-  bottom:0;
+  bottom: 0;
   right: 16px;
   left: 16px;
 }
@@ -155,6 +155,7 @@ body {
 }
 
 .button {
+  box-sizing: border-box;
   display: inline;
   font-family: inherit;
   font-weight: 700;
@@ -165,8 +166,9 @@ body {
   cursor: pointer;
   text-decoration: none;
   background-color: #756157;
-  padding: 8px 50px;
+  padding: 8px 26px;
   border-radius: 4px;
+  text-transform: uppercase;
   transition: background-color 0.3s;
   border: none;
 }
@@ -182,6 +184,7 @@ body {
 .button:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.30);
+  outline: none;
 }
 
 .button:disabled {
@@ -205,7 +208,6 @@ body {
 }
 
 .select-control {
-  padding: 14px 20px;
 }
 
 .text-information-title {
@@ -227,7 +229,7 @@ body {
 
 .hero {
   text-align: center;
-  margin-bottom:  21px;
+  margin-bottom: 21px;
 }
 
 .hero-promo {
@@ -425,6 +427,7 @@ body {
 
 .find-button {
   display: block;
+  padding: 8px 50px;
   margin: 0 auto;
 }
 
@@ -453,6 +456,7 @@ body {
   margin: 0 auto;
   display: flex;
 }
+
 .newsletter-input {
   font-family: inherit;
   flex-grow: 1;
@@ -506,6 +510,10 @@ body {
   fill: #83B3D3;
 }
 
+.footer-social-link:active {
+  outline: none;
+}
+
 .footer-social-link:hover .footer-social-icon {
   fill: #68A2CA;
 }
@@ -557,9 +565,11 @@ body {
 .footer-contacts-phone:hover {
   color: #756157;
 }
+
 .footer-contacts-phone:focus {
   color: #756157;
 }
+
 .footer-contacts-phone:active {
   color: rgba(117, 97, 87, 0.30);
 }
@@ -567,12 +577,15 @@ body {
 .footer-logo-icon {
   fill: #000000;
 }
+
 .footer-logo-icon:hover {
   fill: #756157;
 }
+
 .footer-logo-icon:focus {
   fill: #756157;
 }
+
 .footer-logo-icon:active {
   fill: rgba(117, 97, 87, 0.3);
 }
@@ -600,12 +613,28 @@ body {
 }
 
 .breadcrumbs {
+  display: flex;
   margin: 0 0 40px;
   padding: 0;
 }
 
 .breadcrumbs-item {
   display: inline;
+  position: relative;
+}
+
+.breadcrumbs-item::after {
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 11px;
+  top: 5px;
+  right: 7px;
+  background-image: url("../images/icons/arrow.svg");
+}
+
+.breadcrumbs-item:last-child::after {
+  content: none;
 }
 
 .breadcrumbs-link {
@@ -613,7 +642,38 @@ body {
   font-size: 16px;
   color: #FFFFFF;
   text-decoration: none;
+  margin-right: 26px;
 }
+
+.breadcrumbs-link svg {
+  fill: #FFFFFF;
+}
+
+.breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:hover svg {
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-link:focus {
+  color: #FFFFFF;
+}
+
+.breadcrumbs-link:focus svg {
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+
+.breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.breadcrumbs-link:active svg {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
 
 .catalog-filter-title {
   font-size: 20px;
@@ -640,7 +700,10 @@ body {
 .catalog-filter-buttons .button {
   font-size: 16px;
   margin-bottom: 32px;
+  padding: 8px 50px;
+  line-height: 20px;
 }
+
 .catalog-filter-buttons .button:last-child {
   margin-bottom: 0;
 }
@@ -648,6 +711,9 @@ body {
 
 .catalog-filter-buttons {
   width: 191px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .catalog-hotels {
@@ -656,7 +722,7 @@ body {
 }
 
 .catalog-filter-group {
-  padding:0;
+  padding: 0;
   margin: 0;
   border: none;
 }
@@ -670,10 +736,12 @@ body {
 .catalog-filter-left-controls .catalog-filter-group {
   width: 150px;
 }
+
 .catalog-filter-right-controls {
   width: 549px;
   margin-left: auto;
   display: flex;
+  justify-content: space-between;
 }
 
 .catalog-header {
@@ -709,6 +777,10 @@ body {
   margin-right: 0;
 }
 
+.view-type-item .button {
+
+}
+
 .hotel-list {
   display: grid;
   grid-template-columns: repeat(3, 340px);
@@ -726,6 +798,26 @@ body {
 .button-link {
   background-color: transparent;
   border: 0;
+}
+
+.button-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+}
+
+.button-link:focus {
+  outline: 3px solid #83B3D3;
+  background-color: transparent;
+}
+
+.button-link:active {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-link:disabled {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.1)
 }
 
 .catalog-count {
