@@ -788,16 +788,16 @@ body {
 
 .view-type-item .button:hover {
   background-color: #FFFFFF;
-  border: 2px solid  #000000;
+  border: 2px solid #000000;
 }
 
 .view-type-item .button:focus {
   background-color: #FFFFFF;
-  border: 2px solid  #68A2CA;
+  border: 2px solid #68A2CA;
 }
 
 .view-type-item .button:active {
-  border: 2px solid  #000000;
+  border: 2px solid #000000;
 }
 
 
@@ -984,6 +984,7 @@ body {
   background-color: #68A2CA;
   outline: none;
 }
+
 .pagination-link:active {
   background-color: #82B3D3;
 }
