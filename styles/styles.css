@@ -179,12 +179,12 @@ body {
 
 .button:focus {
   background-color: #615048;
+  outline: none;
 }
 
 .button:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.30);
-  outline: none;
 }
 
 .button:disabled {
@@ -193,11 +193,11 @@ body {
 
 .button-light {
   background-color: #FFFFFF;
-  outline: 2px solid #E5E5E5;
+  border: 2px solid #E5E5E5;
 }
 
 .button-light.active {
-  outline: 2px solid #000000;
+  border: 2px solid #000000;
 }
 
 .rent-button {
@@ -370,7 +370,9 @@ body {
   padding: 80px 0;
 }
 
-.advantages-invite-icon {
+.advantages-invite-container::before {
+  display: block;
+  content: "";
   background-repeat: no-repeat;
   background-position: center;
   width: 76px;
@@ -378,15 +380,15 @@ body {
   margin: 0 auto 30px;
 }
 
-.advantages-invite-icon-home {
+.advantages-invite-icon-home::before {
   background-image: url("../images/icons/advantages/house.svg");
 }
 
-.advantages-invite-icon-food {
+.advantages-invite-icon-food::before {
   background-image: url("../images/icons/advantages/food.svg");
 }
 
-.advantages-invite-icon-souvenirs {
+.advantages-invite-icon-souvenirs::before {
   background-image: url("../images/icons/advantages/present.svg");
 }
 
@@ -568,6 +570,7 @@ body {
 
 .footer-contacts-phone:focus {
   color: #756157;
+  outline: none;
 }
 
 .footer-contacts-phone:active {
@@ -659,10 +662,11 @@ body {
 
 .breadcrumbs-link:focus {
   color: #FFFFFF;
+  outline: none;
 }
 
 .breadcrumbs-link:focus svg {
-  fill: rgba(255, 255, 255, 0.6);
+  fill: rgba(255, 255, 255);
 }
 
 
@@ -784,7 +788,7 @@ body {
 
 .view-type-item .button:hover {
   background-color: #FFFFFF;
-  outline: 2px solid  #000000;
+  border: 2px solid  #000000;
 }
 
 .view-type-item .button:focus {
@@ -793,7 +797,7 @@ body {
 }
 
 .view-type-item .button:active {
-  outline: 2px solid  #000000;
+  border: 2px solid  #000000;
 }
 
 
@@ -920,9 +924,12 @@ body {
 .hotel-card-stars {
   display: flex;
   align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.hotel-card-star {
+.hotel-card-star.active {
   width: 18px;
   height: 17px;
   background-image: url("../images/icons/star.svg");
@@ -964,17 +971,18 @@ body {
   color: #FFFFFF;
   background-color: #82B3D3;
   justify-content: center;
-  transition: background-color 0.3s;
+  border: 1px solid transparent;
 }
 
 .pagination-link:hover {
-  outline: 1px solid #82B3D3;
+  border: 1px solid #82B3D3;
   background-color: #68A2CA;
 }
 
 .pagination-link:focus {
-  outline: 1px solid #82B3D3;
+  border: 1px solid #82B3D3;
   background-color: #68A2CA;
+  outline: none;
 }
 .pagination-link:active {
   background-color: #82B3D3;
@@ -993,9 +1001,19 @@ body {
 .pagination-spacing .pagination-link:focus,
 .pagination-spacing .pagination-link:active {
   outline: none;
+  border: 1px solid transparent;
 }
+
 .pagination-current {
   color: #000000;
   background-color: #F2F2F2;
+}
+
+
+.pagination-current:hover,
+.pagination-current:focus,
+.pagination-current:active {
+  background-color: #F2F2F2;
+  border: 1px solid transparent;
 }
 
