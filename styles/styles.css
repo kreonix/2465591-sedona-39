@@ -193,11 +193,11 @@ body {
 
 .button-light {
   background-color: #FFFFFF;
-  border: 2px solid #E5E5E5;
+  outline: 2px solid #E5E5E5;
 }
 
 .button-light.active {
-  border: 2px solid #000000;
+  outline: 2px solid #000000;
 }
 
 .rent-button {
@@ -463,12 +463,12 @@ body {
   padding: 12px 20px;
   border: none;
   border-radius: 4px 0 0 4px;
+  background-color: #F2F2F2;
 }
 
 .subscribe-button {
   border-radius: 0 4px 4px 0;
 }
-
 
 .button-secondary-color {
   background-color: #82B3D3;
@@ -778,8 +778,37 @@ body {
 }
 
 .view-type-item .button {
-
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
+.view-type-item .button:hover {
+  background-color: #FFFFFF;
+  outline: 2px solid  #000000;
+}
+
+.view-type-item .button:focus {
+  background-color: #FFFFFF;
+  border: 2px solid  #68A2CA;
+}
+
+.view-type-item .button:active {
+  outline: 2px solid  #000000;
+}
+
+
+.button-show-cards {
+  background-image: url('../images/icons/columns-view.svg');
+}
+
+.button-show-feed {
+  background-image: url('../images/icons/slide-view.svg');
+}
+
+.button-show-list {
+  background-image: url('../images/icons/list-view.svg');
+}
+
 
 .hotel-list {
   display: grid;
@@ -888,6 +917,20 @@ body {
   border-radius: 4px;
 }
 
+.hotel-card-stars {
+  display: flex;
+  align-items: center;
+}
+
+.hotel-card-star {
+  width: 18px;
+  height: 17px;
+  background-image: url("../images/icons/star.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 4px;
+}
+
 .hotel-card-buttons .button {
   font-size: 16px;
   line-height: 20px;
@@ -913,7 +956,7 @@ body {
   text-decoration: none;
   width: 60px;
   height: 60px;
-  padding: 12px 25px;
+  padding: 11px 24px;
   border-radius: 4px;
   font-weight: 700;
   line-height: 36px;
@@ -921,6 +964,20 @@ body {
   color: #FFFFFF;
   background-color: #82B3D3;
   justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.pagination-link:hover {
+  outline: 1px solid #82B3D3;
+  background-color: #68A2CA;
+}
+
+.pagination-link:focus {
+  outline: 1px solid #82B3D3;
+  background-color: #68A2CA;
+}
+.pagination-link:active {
+  background-color: #82B3D3;
 }
 
 .pagination-item:not(:last-child) {
@@ -932,6 +989,11 @@ body {
   color: #000000;
 }
 
+.pagination-spacing .pagination-link:hover,
+.pagination-spacing .pagination-link:focus,
+.pagination-spacing .pagination-link:active {
+  outline: none;
+}
 .pagination-current {
   color: #000000;
   background-color: #F2F2F2;
