@@ -273,7 +273,7 @@ body {
   flex-direction: column;
   flex-grow: 1;
   justify-content: flex-end;
-  padding: 103px 85px;
+  padding: 111px 85px;
 }
 
 .advantages-item-container p {
@@ -283,6 +283,10 @@ body {
 .advantages-item-picture {
   grid-column: 1/ span 3;
   flex-direction: row;
+}
+
+.advantages-item-picture .advantages-item-container {
+  padding: 103px 85px;
 }
 
 
@@ -464,12 +468,22 @@ body {
   flex-grow: 1;
   padding: 12px 20px;
   border: none;
+  font-size: 18px;
   border-radius: 4px 0 0 4px;
+  line-height: 24px;
+  font-weight: 700;
   background-color: #F2F2F2;
+}
+
+.newsletter-input::placeholder {
+  line-height: 24px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .subscribe-button {
   border-radius: 0 4px 4px 0;
+  min-width: 232px;
 }
 
 .button-secondary-color {
@@ -496,6 +510,7 @@ body {
   justify-content: space-between;
   display: flex;
   padding: 40px 70px 30px;
+  align-items: flex-end;
 }
 
 .footer-social {
@@ -546,9 +561,10 @@ body {
 .footer-social-link {
   display: block;
   position: relative;
-  padding: 13px;
+  padding: 15px 14px;
   min-height: 16px;
   min-width: 18px;
+
 }
 
 .footer-logo {
@@ -591,6 +607,10 @@ body {
 
 .footer-logo-icon:active {
   fill: rgba(117, 97, 87, 0.3);
+}
+
+.footer-logo-developer {
+  display: block;
 }
 
 .catalog-filter {
@@ -858,7 +878,7 @@ body {
   font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0 0 40px;
+  margin: 0;
 }
 
 .hotel-content {
