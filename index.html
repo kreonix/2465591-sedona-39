@@ -7,7 +7,7 @@
 </head>
 <body>
 <div class="page-container">
-  <header class="page-header">
+  <header data-test="header" class="page-header">
     <a class="page-header-logo" href="/">
       <img src="images/icons/logo.svg" alt="Sedona" width="140" height="70">
     </a>
@@ -58,8 +58,8 @@
       </ul>
     </nav>
   </header>
-  <main class="main-index">
-    <section class="hero">
+  <main data-test="main" class="main-index">
+    <section class="hero" data-test="hero">
       <h1 class="visually-hidden">Город Sedona</h1>
       <img class="hero-background-image" src="images/index-background.jpg"
            alt="Изображение каньона c облаками, который содержит текст приветствия и название проекта Sedona"
@@ -73,7 +73,7 @@
         <p class="text-information-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </div>
     </section>
-    <section class="advantages">
+    <section class="advantages" data-test="advantages">
       <h2 class="visually-hidden">Приемущества</h2>
       <ul class="advantages-list">
         <li class="advantages-item advantages-item-picture">
@@ -111,7 +111,10 @@
           </div>
         </li>
       </ul>
-      <div class="advantages-promo">
+    </section>
+    <section data-test="service">
+      <h2 class="visually-hidden">Сервис</h2>
+      <div class="advantages-promo" >
         <h3 class="text-information-title">
           Приезжайте в Седону отдохнуть в комфорте и уюте!
         </h3>
@@ -139,7 +142,7 @@
         </li>
       </ul>
     </section>
-    <section class="find">
+    <section class="find" data-test="search">
       <h2 class="visually-hidden">Приглашение</h2>
       <h3 class="text-information-title">Заинтересовались?</h3>
       <p class="text-information-description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие
@@ -148,7 +151,7 @@
         Седоне</p>
       <button class="button find-button">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</button>
     </section>
-    <section class="newsletter newsletter-background">
+    <section class="newsletter newsletter-background" data-test="subscribe">
       <h2 class="visually-hidden">Подписка на рассылку</h2>
       <div class="newsletter-inner">
         <h3 class="text-information-title">Подпишитесь на рассылку</h3>
@@ -164,7 +167,7 @@
       </div>
     </section>
   </main>
-  <footer class="page-footer">
+  <footer class="page-footer" data-test="footer">
     <div class="footer-social">
       <ul class="footer-social-list">
         <li class="footer-social-item">
