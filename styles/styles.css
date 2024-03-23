@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: > 2% and last 1 version
+*/
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -226,6 +233,7 @@ body {
   background-repeat: no-repeat;
   background-position: right 16px center;
   border-radius: 4px;
+  -webkit-appearance: none;
   appearance: none;
 }
 
@@ -1325,6 +1333,7 @@ body {
 
 .counter-control input::-webkit-outer-spin-button,
 .counter-control input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
@@ -1485,6 +1494,7 @@ body {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
@@ -1580,5 +1590,4 @@ body {
   border-radius: 50%;
   content: "";
 }
-
 
