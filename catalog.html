@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="favicon.ico">
   <link rel="stylesheet" href="styles/styles.css"/>
 </head>
 <body>
@@ -150,10 +151,10 @@
                 </div>
                 <div class="range-scale">
                   <div class="range-bar" style="width: 227px">
-                    <button class="range-toggle toggle-min">
+                    <button class="range-toggle toggle-min" type="button">
                       <span class="visually-hidden">Изменить минимальную цену</span>
                     </button>
-                    <button class="range-toggle toggle-max">
+                    <button class="range-toggle toggle-max" type="button">
                       <span class="visually-hidden">Изменить максимальную цену</span>
                     </button>
                   </div>
@@ -214,7 +215,7 @@
           <div class="hotel-content">
             <div class="hotel-details">
               <p>Гостиница</p>
-              <p>От <span>4000</span> ₽</p>
+              <p class="hotel-price">От <span>4000</span> ₽</p>
             </div>
             <div class="hotel-details hotel-card-buttons">
               <a class="button" href="#">
@@ -248,7 +249,7 @@
 
             <div class="hotel-details">
               <p>Гостиница</p>
-              <p>От <span>5000</span> ₽</p>
+              <p class="hotel-price">От <span>5000</span> ₽</p>
             </div>
             <div class="hotel-card-buttons hotel-details">
               <a class="button" href="#">
@@ -279,10 +280,9 @@
             <h3 class="hotel-card-title">Desert Quail Inn</h3>
           </a>
           <div class="hotel-content">
-
             <div class="hotel-details">
               <p>Гостиница</p>
-              <p>От <span>2500</span> ₽</p>
+              <p class="hotel-price">От <span>2500</span> ₽</p>
             </div>
             <div class="hotel-card-buttons hotel-details">
               <a class="button" href="#">
@@ -315,7 +315,7 @@
           <div class="hotel-content">
             <div class="hotel-details">
               <p>Гостиница</p>
-              <p>От <span>1500</span> ₽</p>
+              <p class="hotel-price">От <span>1500</span> ₽</p>
             </div>
             <div class="hotel-card-buttons hotel-details">
               <a class="button" href="#">
@@ -443,7 +443,7 @@
       <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
       <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
         <div class="field-group">
-          <label for="arriveDate" class="form-label">Дата заезда:</label>
+          <label class="form-label" for="arriveDate">Дата заезда:</label>
           <div class="date-control-wrapper">
             <input class="arrive-form-field field date-control" value="27 апреля 2020" type="text" id="arriveDate"
                    name="arriveDate"
@@ -452,7 +452,7 @@
           <p class="field-tip field-validation-error">Мы не можем отправить вас в прошлое.</p>
         </div>
         <div class="field-group">
-          <label for="departureDate" class="form-label">Дата выезда:</label>
+          <label class="form-label" for="departureDate">Дата выезда:</label>
           <div class="date-control-wrapper">
             <input class="arrive-form-field field date-control" value="1 сентября 2023" type="text" id="departureDate"
                    name="departureDate"
@@ -462,16 +462,16 @@
         </div>
         <div class="amount-person-group">
           <div class="field-group">
-            <label for="adults" class="form-label">Взрослые:</label>
+            <label class="form-label" for="adults">Взрослые:</label>
             <div class="counter-control">
               <div class="button-counter-wrapper">
-                <button type="button" class="minus-button">
+                <button class="minus-button" type="button">
                   <span class="visually-hidden">Отнять единицу</span>
                 </button>
               </div>
               <input class="arrive-form-field field" id="adults" name="adults" placeholder="">
               <div class="button-counter-wrapper">
-                <button type="button" class="plus-button">
+                <button class="plus-button" type="button">
                   <span class="visually-hidden">Прибавить единицу</span>
                 </button>
               </div>
@@ -491,13 +491,13 @@
 
             <div class="counter-control">
               <div class="button-counter-wrapper">
-                <button type="button" class="minus-button">
+                <button class="minus-button" type="button">
                   <span class="visually-hidden">Отнять единицу</span>
                 </button>
               </div>
               <input class="arrive-form-field field" id="children" name="children" placeholder="">
               <div class="button-counter-wrapper">
-                <button type="button" class="plus-button">
+                <button class="plus-button" type="button">
                   <span class="visually-hidden">Прибавить единицу</span>
                 </button>
               </div>

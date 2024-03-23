@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: > 2% and last 1 version
+*/
+
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -143,6 +150,7 @@ body {
   box-sizing: border-box;
   padding: 5px;
   top: 11px;
+  right: 4px;
 }
 
 .navigation-icon {
@@ -166,7 +174,7 @@ body {
   cursor: pointer;
   text-decoration: none;
   background-color: #756157;
-  padding: 8px 26px;
+  padding: 8px 16px;
   border-radius: 4px;
   text-transform: uppercase;
   transition: background-color 0.3s;
@@ -201,6 +209,7 @@ body {
 }
 
 .rent-button {
+  display: block;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -209,6 +218,7 @@ body {
 
 .select-control-wrapper {
   width: 292px;
+  margin-right: 70px;
 }
 
 .select-control {
@@ -223,6 +233,7 @@ body {
   background-repeat: no-repeat;
   background-position: right 16px center;
   border-radius: 4px;
+  -webkit-appearance: none;
   appearance: none;
 }
 
@@ -317,7 +328,7 @@ body {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  justify-content: flex-end;
+  justify-content: center;
   padding: 111px 85px;
 }
 
@@ -373,7 +384,7 @@ body {
 .advantages-item-title::after {
   content: '';
   position: absolute;
-  top: 86px;
+  bottom: -30px;
   left: 85px;
   right: 85px;
   height: 2px;
@@ -384,7 +395,7 @@ body {
 .advantages-item-picture .advantages-item-title::after {
   content: '';
   position: absolute;
-  top: 86px;
+  bottom: -30px;
   left: 85px;
   right: 85px;
   height: 2px;
@@ -405,7 +416,7 @@ body {
   min-height: 385px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -484,7 +495,8 @@ body {
 
 .newsletter-background {
   color: #FFFFFF;
-  background-image: url("../images/blur-filter-photo.jpg");
+  background-image: url("../images/subscribe.jpg");
+  background-color: #68A2CA;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -680,6 +692,7 @@ body {
 .catalog-filter {
   color: #FFFFFF;
   background-image: url("../images/blur-filter-photo.jpg");
+  background-color: #68A2CA;
   background-size: cover;
 }
 
@@ -778,7 +791,7 @@ body {
 }
 
 .catalog-filter-item {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .catalog-filter-item:last-child {
@@ -843,7 +856,6 @@ body {
   margin-left: auto;
   display: flex;
   width: 522px;
-  justify-content: space-between;
 }
 
 .view-type-list {
@@ -951,14 +963,15 @@ body {
 .hotel-content {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   flex-grow: 1;
 }
 
 .hotel-details {
-  display: flex;
+  display: grid;
   justify-content: space-between;
   margin-bottom: 16px;
+  grid-template-columns: repeat(2, 140px);
 }
 
 .hotel-details:last-child {
@@ -967,6 +980,10 @@ body {
 
 .hotel-details p {
   margin: 0;
+}
+
+.hotel-price {
+  text-align: right;
 }
 
 .hotel-card-link {
@@ -984,7 +1001,7 @@ body {
   justify-content: space-between;
   color: #333333;
   padding: 20px;
-  border: 1px solid #E6E6E6;
+  outline: 1px solid #E6E6E6;
   border-radius: 4px;
 }
 
@@ -1022,18 +1039,15 @@ body {
   background-image: url("../images/icons/star.svg");
   background-repeat: no-repeat;
   background-position: center;
-  margin-right: 4px;
+  margin-right: 6px;
 }
 
 .hotel-card-buttons .button {
   font-size: 16px;
   line-height: 20px;
-  max-height: 36px;
-  max-width: 140px;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
-  white-space: nowrap;
 }
 
 
@@ -1048,9 +1062,9 @@ body {
   display: flex;
   box-sizing: border-box;
   text-decoration: none;
-  width: 60px;
-  height: 60px;
-  padding: 11px 24px;
+  min-width: 60px;
+  min-height: 60px;
+  padding: 11px 18px;
   border-radius: 4px;
   font-weight: 700;
   line-height: 36px;
@@ -1319,6 +1333,7 @@ body {
 
 .counter-control input::-webkit-outer-spin-button,
 .counter-control input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
@@ -1479,6 +1494,7 @@ body {
 
 .range-input::-webkit-outer-spin-button,
 .range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
@@ -1574,5 +1590,4 @@ body {
   border-radius: 50%;
   content: "";
 }
-
 
