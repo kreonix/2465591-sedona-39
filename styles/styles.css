@@ -488,6 +488,7 @@ body {
 .newsletter-background {
   color: #FFFFFF;
   background-image: url("../images/subscribe.jpg");
+  background-color: #68A2CA;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -683,6 +684,7 @@ body {
 .catalog-filter {
   color: #FFFFFF;
   background-image: url("../images/blur-filter-photo.jpg");
+  background-color: #68A2CA;
   background-size: cover;
 }
 
