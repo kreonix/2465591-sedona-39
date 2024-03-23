@@ -143,6 +143,7 @@ body {
   box-sizing: border-box;
   padding: 5px;
   top: 11px;
+  right: 4px;
 }
 
 .navigation-icon {
@@ -780,7 +781,7 @@ body {
 }
 
 .catalog-filter-item {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .catalog-filter-item:last-child {
@@ -990,7 +991,7 @@ body {
   justify-content: space-between;
   color: #333333;
   padding: 20px;
-  border: 1px solid #E6E6E6;
+  outline: 1px solid #E6E6E6;
   border-radius: 4px;
 }
 
@@ -1028,7 +1029,7 @@ body {
   background-image: url("../images/icons/star.svg");
   background-repeat: no-repeat;
   background-position: center;
-  margin-right: 4px;
+  margin-right: 6px;
 }
 
 .hotel-card-buttons .button {
