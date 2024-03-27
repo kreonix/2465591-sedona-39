@@ -9,19 +9,19 @@
 <body>
 <div class="page-container">
   <header class="page-header" data-test="header">
-    <a class="page-header-logo" href="/">
+    <a class="page-header-logo" href="index.html">
       <img src="images/icons/logo.svg" alt="Sedona" width="140" height="70">
     </a>
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link" href="/">Главная</a>
+          <a class="navigation-link" href="index.html">Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">О седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="/hotels.html">Гостиницы</a>
+          <a class="navigation-link navigation-link-current">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-list navigation-user">
@@ -39,8 +39,8 @@
             </span>
           </a>
         </li>
-        <li class="navigation-item">
-          <a class="navigation-link navigation-cart-link" href="#">
+        <li class="navigation-item navigation-cart-link">
+          <a class="navigation-link" href="#">
             <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                  width="20" height="20" viewBox="0 0 20 20"
                  fill="none">
@@ -64,10 +64,10 @@
   <main class="main-index" data-test="main">
     <section class="catalog-filter" data-test="filter">
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
-      <nav>
+      <nav class="navigation-breadcrumbs">
         <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">
+            <a class="breadcrumbs-link" href="./index.html">
               <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="13" height="13"
                    fill="none" viewBox="0 0 13 13">
                 <path fill="current" d="m6.371.5-6 5.8v6.2h12V6.3l-6-5.8Zm5 11h-10V6.7l5-4.8 5 4.8v4.8Z"/>
@@ -371,7 +371,8 @@
         </p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletterEmail">Ваш e-mail</label>
-          <input class="newsletter-input" id="newsletterEmail" type="email" name="email" placeholder="Ваш e-mail">
+          <input class="newsletter-input" id="newsletterEmail" type="email" name="email" placeholder="Ваш e-mail"
+                 required>
           <button class="button button-secondary-color subscribe-button" type="submit">
             ПОДПИСАТЬСЯ
           </button>

@@ -9,19 +9,19 @@
 <body>
 <div class="page-container">
   <header class="page-header" data-test="header">
-    <a class="page-header-logo" href="/">
+    <a class="page-header-logo" href="index.html">
       <img src="images/icons/logo.svg" alt="Sedona" width="140" height="70">
     </a>
     <nav class="navigation">
       <ul class="navigation-list">
         <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="/">Главная</a>
+          <a class="navigation-link navigation-link-current">Главная</a>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">О седоне</a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="/hotels.html">Гостиницы</a>
+          <a class="navigation-link" href="./catalog.html">Гостиницы</a>
         </li>
       </ul>
       <ul class="navigation-list navigation-user">
@@ -39,8 +39,8 @@
             </span>
           </a>
         </li>
-        <li class="navigation-item">
-          <a class="navigation-link navigation-cart-link" href="#">
+        <li class="navigation-item navigation-cart-link">
+          <a class="navigation-link" href="#">
             <svg class="navigation-icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg"
                  width="20" height="20" viewBox="0 0 20 20"
                  fill="none">
@@ -64,20 +64,20 @@
   <main class="main-index" data-test="main">
     <section class="hero" data-test="hero">
       <h1 class="visually-hidden">Город Sedona</h1>
-      <img class="hero-background-image" src="images/index-background.jpg"
-           alt="Изображение каньона c облаками, который содержит текст приветствия и название проекта Sedona"
-           width="1200"
-           height="485">
-      <div class="hero-promo">
+      <img class="hero-background-image" src="images/welcome-text.svg"
+           alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks!"
+           width="458"
+           height="352">
+    </section>
+    <section class="advantages" data-test="advantages">
+      <h2 class="visually-hidden">Приемущества</h2>
+      <div class="advantages-discuss">
         <p class="text-information-title">
           Седона — небольшой городок в Аризоне,
           заслуживающий большего!
         </p>
         <p class="text-information-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
       </div>
-    </section>
-    <section class="advantages" data-test="advantages">
-      <h2 class="visually-hidden">Приемущества</h2>
       <ul class="advantages-list">
         <li class="advantages-item advantages-item-picture">
           <div class="advantages-item-container">
@@ -163,7 +163,8 @@
         </p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="newsletterEmail">Ваш e-mail</label>
-          <input class="newsletter-input" id="newsletterEmail" type="email" name="email" placeholder="Ваш e-mail">
+          <input class="newsletter-input" id="newsletterEmail" type="email" name="email" placeholder="Ваш e-mail"
+                 required>
           <button class="button subscribe-button button-secondary-color" type="submit">
             ПОДПИСАТЬСЯ
           </button>
@@ -239,7 +240,7 @@
           <div class="date-control-wrapper">
             <input class="arrive-form-field field date-control" value="27 апреля 2020" type="text" id="arriveDate"
                    name="arriveDate"
-                   placeholder="Укажите дату">
+                   placeholder="Укажите дату" required>
           </div>
           <p class="field-tip field-validation-error">Мы не можем отправить вас в прошлое.</p>
         </div>
@@ -248,7 +249,7 @@
           <div class="date-control-wrapper">
             <input class="arrive-form-field field date-control" value="1 сентября 2023" type="text" id="departureDate"
                    name="departureDate"
-                   placeholder="Укажите дату">
+                   placeholder="Укажите дату" required>
           </div>
           <p class="field-tip">На эти даты есть свободные номера. Пока есть.</p>
         </div>
