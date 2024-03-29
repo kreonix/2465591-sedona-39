@@ -275,7 +275,18 @@ body {
   padding-bottom: 82px;
   background-image: url("../images/hero-background.jpg");
   background-size: cover;
-  clip-path: polygon(50% 100%, 21% 88%, 21% 93%, 0% 88%, 0% 0%, 100% 0%, 100% 88%, 79% 93%, 79% 88%);
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  background-image: url("../images/polygonal.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  bottom: 0;
+  right: 0;
+  width: 1200px;
+  height: 57px;
 }
 
 .hero-background-image {
